@@ -22,9 +22,19 @@ Expected results: Name should be present below login icon
   * Enter valid Password in *"Slaptažodis"* field
   * Click button *"Išsaugoti"*
 
-Expected results: Information should be successfully updated
+Expected results: Should appear text that Information successfully updated and saved
 
-### 3. TEST Input invalid password
+#### 3. TEST Try to login invalid password `Home page`
+
+   * Click on Login icon *"Prisijungti"*
+   * Enter valid Email in *"El.paštas"* field
+   * Enter invalid Password in *"Slaptažodis"* field
+   * Click button *"Prisijungti"*
+
+Expected result: Should appear alert message "Identification failed" 
+
+#### 4. TEST Search functionality `Home page`
+
 
 
 
