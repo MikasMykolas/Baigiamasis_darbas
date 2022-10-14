@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="023a4b20-0c56-4416-9620-b39be78b9b1a" name="Changes" comment="Added files to ignore into gitignore file">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="023a4b20-0c56-4416-9620-b39be78b9b1a" name="Changes" comment="Set up options and driver in Common class" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -58,7 +63,49 @@
       <option name="project" value="LOCAL" />
       <updated>1665668033983</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Created Common class">
+      <created>1665727787355</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665727787355</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Created Driver class">
+      <created>1665727862577</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665727862577</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Created Locators class">
+      <created>1665727877474</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665727877474</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Set up Options and drivers imn Driver class">
+      <created>1665728292362</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665728292362</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added attribute setUpOption to Chromedriver in Driver class">
+      <created>1665728525385</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665728525385</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Set up options and driver in Common class">
+      <created>1665728841749</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665728841750</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -76,6 +123,12 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Added dependency to pom file" />
     <MESSAGE value="Added files to ignore into gitignore file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added files to ignore into gitignore file" />
+    <MESSAGE value="Created Common class" />
+    <MESSAGE value="Created Driver class" />
+    <MESSAGE value="Created Locators class" />
+    <MESSAGE value="Set up Options and drivers imn Driver class" />
+    <MESSAGE value="Added attribute setUpOption to Chromedriver in Driver class" />
+    <MESSAGE value="Set up options and driver in Common class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Set up options and driver in Common class" />
   </component>
 </project>
