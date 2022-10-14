@@ -15,10 +15,9 @@ public class Driver {
     public static void setDriver() {
         WebDriverManager.chromedriver().setup();
 
-        driver.set(new ChromeDriver());
+        driver.set(new ChromeDriver(setUpOption()));
         driver.get().manage().deleteAllCookies();
         driver.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
-
     }
     public static WebDriver getDriver(){return driver.get();}
     public static void close(){driver.get().quit();}
@@ -28,7 +27,5 @@ public class Driver {
         options.addArguments("window-size=2000,3000");
         options.addArguments("--force-device-scale-factor=0.75");
         return options;
-
     }
-
 }
