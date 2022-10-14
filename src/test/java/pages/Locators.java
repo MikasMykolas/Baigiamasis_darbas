@@ -20,6 +20,16 @@ public class Locators {
                     ("//*[@id='login-form']/section/div[1]/div[1]/input");
             public static By inputValidPassword = By.xpath
                     ("//*[@id='login-form']/section/div[2]/div[1]/div/input");
+            public static By buttonSubmitLogin = By.xpath("//button[@id='submit-login']");
+            public static By spanButtonInformation = By.xpath("//a[@id='identity-link']");
+            public static By inputCompanyName = By.xpath("//input[@name='company']");
+            public static By inputCompanyCode = By.xpath("//input[@name='siret']");
+            public static By reInputValidPassword = By.xpath
+                    ("//*[@id='customer-form']/section/div[6]/div[1]/div/input");
+            public static By buttonSubmitSave = By.xpath
+                    ("//button[@class='btn btn-primary form-control-submit']");
+            public static By readArticleNotificationText = By.xpath
+                    ("//aside[@id='notifications']");
 
         }
     }
