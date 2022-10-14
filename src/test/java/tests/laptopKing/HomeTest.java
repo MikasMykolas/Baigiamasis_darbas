@@ -3,13 +3,8 @@ package tests.laptopKing;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import pages.Common;
-import pages.Locators;
 import pages.laptopKing.HomePage;
 import tests.TestBase;
-import utils.Driver;
-
-import java.util.concurrent.TimeUnit;
 
 public class HomeTest extends TestBase {
 
@@ -58,6 +53,33 @@ public class HomeTest extends TestBase {
         actualAlertMessage = HomePage.readAlertMessage();
 
         Assert.assertTrue(actualAlertMessage.contains(expectedAlertMessage));
+    }
+
+    @Test
+    private void testSearchFunctionWithValidKeyword(){
+        String enterTextInSearch = "Pele";
+        String expectedSearchResultsText = "Rodoma 1-4 iš 4 prekės(-ių)";
+        String actualSearchResultsText;
+
+        HomePage.clickOnSearchIcon();
+        HomePage.enterTextInSearchBar(enterTextInSearch);
+        HomePage.clickSearchButtonIcon();
+        actualSearchResultsText = HomePage.readCorrectSearchResultsText();
+
+        Assert.assertTrue(actualSearchResultsText.contains(expectedSearchResultsText));
+    }
+    @Test
+    private void testSearchFunctionWithInvalidKeyword(){
+        String enterTextInSearch = "afafafafaf";
+        String expectedSearchResultsText = "Šioje kategorijoje nėra produktų";
+        String actualSearchResultsText;
+
+        HomePage.clickOnSearchIcon();
+        HomePage.enterTextInSearchBar(enterTextInSearch);
+        HomePage.clickSearchButtonIcon();
+        actualSearchResultsText = HomePage.readIncorrectKeywordSearchResultsText();
+
+        Assert.assertTrue(actualSearchResultsText.contains(expectedSearchResultsText));
     }
 }
 

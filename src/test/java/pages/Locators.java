@@ -15,7 +15,7 @@ public class Locators {
             public static By spanReadLoginIconText = By.xpath("//*[@id='header-user-btn']/a/span");
         }
         public static class LoginAndAddInfo {
-            public static By headerClickLoginIcon = By.xpath("//*[@id='header-user-btn']/a");
+            public static By clickOnLoginIcon = By.xpath("//*[@id='header-user-btn']/a");
             public static By inputValidEmail = By.xpath
                     ("//*[@id='login-form']/section/div[1]/div[1]/input");
             public static By inputValidPassword = By.xpath
@@ -32,6 +32,13 @@ public class Locators {
                     ("//aside[@id='notifications']");
             public static By readAlertMessageText = By.xpath("//*[@class='help-block']");
         }
-
+        public static class SearchFunctions {
+            public static By clickOnSearchIcon = By.xpath("//a[@id='header-search-btn-drop']");
+            public static By inputTextInSearchBar = By.xpath("//*[@id='search_widget']/form/div[1]/input");
+            public static By submitSearchButton = By.xpath("//*[@id='search_widget']/form/div[1]/button");
+            public static By spanIncorrectSearchResultsText = By.xpath("//*[@id='products']/div/strong");
+            public static By spanCorrectSearchResultsText = By.xpath
+                    ("//span[@class='showing hidden-sm-down']");
+        }
     }
 }
