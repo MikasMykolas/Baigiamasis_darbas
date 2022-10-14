@@ -70,7 +70,7 @@ public class HomeTest extends TestBase {
     }
     @Test
     private void testSearchFunctionWithInvalidKeyword(){
-        String enterTextInSearch = "afafafafaf";
+        String enterTextInSearch = "asadafafggsf";
         String expectedSearchResultsText = "Šioje kategorijoje nėra produktų";
         String actualSearchResultsText;
 
@@ -79,7 +79,7 @@ public class HomeTest extends TestBase {
         HomePage.clickSearchButtonIcon();
         actualSearchResultsText = HomePage.readIncorrectKeywordSearchResultsText();
 
-        Assert.assertTrue(actualSearchResultsText.contains(expectedSearchResultsText));
+        Assert.assertEquals(actualSearchResultsText, expectedSearchResultsText);
     }
 }
 

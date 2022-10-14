@@ -23,6 +23,7 @@ public class TestListener implements ITestListener {
         File screenshotRaw = takesScreenshot.getScreenshotAs(OutputType.FILE);
 
         String directory = "./screenshots";
+
         LocalDateTime localDateTime = LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd_HH_mm_ss_SSS");
 
@@ -31,10 +32,10 @@ public class TestListener implements ITestListener {
         File screenshotFile = new File(directory + "/screenshot_" + dateTime + "png");
 
         try {
-            FileUtils.copyFile(screenshotRaw,screenshotFile);
+            FileUtils.copyFile(screenshotRaw, screenshotFile);
         } catch (IOException e) {
             e.printStackTrace();
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
