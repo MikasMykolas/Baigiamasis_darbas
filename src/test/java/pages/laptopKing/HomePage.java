@@ -46,4 +46,8 @@ public class HomePage {
     public static String readConfirmChangesMessage() {
         return Common.getElementText(Locators.LaptopKing.LoginAndAddInfo.readArticleNotificationText);
     }
+
+    public static String readAlertMessage() {
+        return Common.getElementText(Locators.LaptopKing.LoginAndAddInfo.readAlertMessageText);
+    }
 }

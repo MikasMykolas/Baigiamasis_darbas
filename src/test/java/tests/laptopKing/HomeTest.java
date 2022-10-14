@@ -7,6 +7,9 @@ import pages.Common;
 import pages.Locators;
 import pages.laptopKing.HomePage;
 import tests.TestBase;
+import utils.Driver;
+
+import java.util.concurrent.TimeUnit;
 
 public class HomeTest extends TestBase {
 
@@ -18,7 +21,7 @@ public class HomeTest extends TestBase {
     }
 
     @Test
-    private void testLoginAndAddAdditionalInfoInPersonalInfo(){
+    private void testLoginAndAddAdditionalInfoInPersonalInfo() {
         String enterEmail = "b.mykolas@gmail.com";
         String enterPassword = "Testavimas";
         String enterCompanyName = "VCS";
@@ -38,14 +41,24 @@ public class HomeTest extends TestBase {
         HomePage.clickButtonIssaugoti();
         actualConfirmChangesMessage = HomePage.readConfirmChangesMessage();
 
-        Assert.assertEquals(actualConfirmChangesMessage,expectedConfirmChangesMessage);
-
-
-
-        HomePage.sleep(2000);
-
-
+        Assert.assertEquals(actualConfirmChangesMessage, expectedConfirmChangesMessage);
     }
 
+    @Test
+    private void testLoginWithInvalidPassword() {
+        String enterEmail = "b.mykolas@gmail.com";
+        String enetInvalidPassword = "badpassword";
+        String expectedAlertMessage = "Identifikavimas nepavyko";
+        String actualAlertMessage;
 
+        HomePage.clickOnLoginIcon();
+        HomePage.enterValidEmail(enterEmail);
+        HomePage.enterValidPassword(enetInvalidPassword);
+        HomePage.clickButtonPrisijungti();
+        actualAlertMessage = HomePage.readAlertMessage();
+
+        Assert.assertTrue(actualAlertMessage.contains(expectedAlertMessage));
+    }
 }
+
+

@@ -14,7 +14,7 @@ public class Locators {
                     ("//button[@class='btn btn-primary form-control-submit']");
             public static By spanReadLoginIconText = By.xpath("//*[@id='header-user-btn']/a/span");
         }
-        public static class LoginAndAddInfo{
+        public static class LoginAndAddInfo {
             public static By headerClickLoginIcon = By.xpath("//*[@id='header-user-btn']/a");
             public static By inputValidEmail = By.xpath
                     ("//*[@id='login-form']/section/div[1]/div[1]/input");
@@ -30,7 +30,8 @@ public class Locators {
                     ("//button[@class='btn btn-primary form-control-submit']");
             public static By readArticleNotificationText = By.xpath
                     ("//aside[@id='notifications']");
-
+            public static By readAlertMessageText = By.xpath("//*[@class='help-block']");
         }
+
     }
 }
