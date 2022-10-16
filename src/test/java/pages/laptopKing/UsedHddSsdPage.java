@@ -12,7 +12,7 @@ public class UsedHddSsdPage {
         Common.sleep(millis);
     }
 
-    public static void clickAddItemOne() {
+    public static void clickbuttonToAddItem() {
         Common.clickElement(Locators.LaptopKing.AddItemsToCart.clickButtonAddItemOne);
     }
 

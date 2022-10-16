@@ -33,7 +33,27 @@ Expected results: Should appear text that Information successfully updated and s
 
 Expected result: Should appear alert message "Identification failed" 
 
-#### 4. TEST Search functionality `Home page`
+#### 4. TEST Search functionality with correct keyword `Home page`
+   * Click on Search icon *"Paieška"*
+   * Enter correct keyword in search bar
+   * Click on Submit search 
+
+Expected result: Should appear text how many items showing
+
+#### 5. TEST Search functionality with incorrect keyword `Home page`
+   * Click on Search icon *"Paieška"*
+   * Enter incorrect keyword in search bar
+   * Click on Submit search 
+
+Expected result: Should appear text "There are no products in this category"
+
+#### 6. TEST Add item to the cart
+  * Click on Item to Add to the cart
+  * Click button to continue shopping on pop up window
+  * Check if Item is Added to the cart
+
+Expected condition: Value of 1 should appear on Cart icon
+
 
 
 
