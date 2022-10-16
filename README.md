@@ -24,7 +24,7 @@ Expected results: Name should be present below login icon
 
 Expected results: Should appear text that Information successfully updated and saved
 
-#### 3. TEST Try to login with invalid password `Home page`
+#### 3. TEST Try to log in with invalid password `Home page`
 
    * Click on Login icon *"Prisijungti"*
    * Enter valid Email in *"El.paštas"* field
@@ -47,7 +47,7 @@ Expected result: Should appear text how many items showing
 
 Expected result: Should appear text "There are no products in this category"
 
-#### 6. TEST Add item to the cart
+#### 6. TEST Add item to the cart `Used HddSdd page` 
   * Click on Item to Add to the cart
   * Click button to continue shopping on pop up window
   * Check if Item is Added to the cart
