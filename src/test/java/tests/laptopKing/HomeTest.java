@@ -56,9 +56,9 @@ public class HomeTest extends TestBase {
     }
 
     @Test
-    private void testSearchFunctionWithValidKeyword(){
+    private void testSearchFunctionWithValidKeyword() {
         String enterTextInSearch = "Pele";
-        String expectedSearchResultsText = "Rodoma 1-4 iš 4 prekės(-ių)";
+        String expectedSearchResultsText = "Rodoma";
         String actualSearchResultsText;
 
         HomePage.clickOnSearchIcon();
@@ -66,11 +66,17 @@ public class HomeTest extends TestBase {
         HomePage.clickSearchButtonIcon();
         actualSearchResultsText = HomePage.readCorrectSearchResultsText();
 
-        Assert.assertTrue(actualSearchResultsText.contains(expectedSearchResultsText));
+        Assert.assertTrue(actualSearchResultsText.contains(expectedSearchResultsText),
+                String.format(
+                        "Actualt results [%s]; Expected reuslts [%s]",
+                        actualSearchResultsText,
+                        expectedSearchResultsText)
+        );
     }
+
     @Test
-    private void testSearchFunctionWithInvalidKeyword(){
-        String enterTextInSearch = "asadafafggsf";
+    private void testSearchFunctionWithInvalidKeyword() {
+        String enterTextInSearch = "Begemotas";
         String expectedSearchResultsText = "Šioje kategorijoje nėra produktų";
         String actualSearchResultsText;
 

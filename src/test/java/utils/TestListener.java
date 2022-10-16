@@ -10,6 +10,7 @@ import java.io.File;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.UUID;
 
 public class TestListener implements ITestListener {
 
@@ -17,7 +18,6 @@ public class TestListener implements ITestListener {
     public void onTestFailure(ITestResult result) {
         takeScreenshot();
     }
-
     private void takeScreenshot() {
         TakesScreenshot takesScreenshot = (TakesScreenshot) Driver.getDriver();
         File screenshotRaw = takesScreenshot.getScreenshotAs(OutputType.FILE);
@@ -26,10 +26,10 @@ public class TestListener implements ITestListener {
 
         LocalDateTime localDateTime = LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd_HH_mm_ss_SSS");
-
         String dateTime = localDateTime.format(formatter);
 
-        File screenshotFile = new File(directory + "/screenshot_" + dateTime + "png");
+        File screenshotFile = new File(
+                directory + "/screenshot_" + dateTime +  ".png");
 
         try {
             FileUtils.copyFile(screenshotRaw, screenshotFile);
@@ -38,6 +38,5 @@ public class TestListener implements ITestListener {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 }
