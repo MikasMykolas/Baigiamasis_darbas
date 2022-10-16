@@ -21,7 +21,7 @@ public class UsedHddSsdTest extends TestBase {
         String actualItemCartValue;
 
 
-        UsedHddSsdPage.clickbuttonToAddItem();
+        UsedHddSsdPage.clickButtonToAddItem();
         UsedHddSsdPage.clickContinueShopping();
 
         actualItemCartValue = UsedHddSsdPage.readCartItemValue();

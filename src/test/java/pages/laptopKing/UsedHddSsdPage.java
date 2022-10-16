@@ -9,19 +9,11 @@ public class UsedHddSsdPage {
         Common.openUrl(url);
     }
 
-    public static void sleep(int millis) {
-        Common.sleep(millis);
-    }
-
-    public static void clickbuttonToAddItem() {
+    public static void clickButtonToAddItem() {
         Common.clickElement(Locators.LaptopKing.AddItemsToCart.clickButtonAddItemOne);
     }
 
-    public static void clickAddItemTwo() {
-        Common.clickElement(Locators.LaptopKing.AddItemsToCart.clickButtonAddItemTwo);
-    }
-
-    public static void clickContinueShopping() {
+      public static void clickContinueShopping() {
         Common.clickElement(Locators.LaptopKing.AddItemsToCart.clickButtonContinueShopping);
     }
 
