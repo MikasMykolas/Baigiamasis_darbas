@@ -9,10 +9,6 @@ public class HomePage {
         Common.openUrl(url);
     }
 
-    public static void sleep(int millis) {
-        Common.sleep(millis);
-    }
-
     public static void clickOnLoginIcon() {
         Common.clickElement(Locators.LaptopKing.LoginAndAddInfo.clickOnLoginIcon);
     }

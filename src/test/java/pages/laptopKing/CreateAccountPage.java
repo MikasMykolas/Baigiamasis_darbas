@@ -10,10 +10,6 @@ public class CreateAccountPage {
         Common.openUrl(url);
     }
 
-    public static void sleep(int millis) {
-        Common.sleep(millis);
-    }
-
     public static void enterFullName(String enterName) {
         Common.sendKeysToElement(enterName,
                 Locators.LaptopKing.CreateAccount.inputFirstName);
