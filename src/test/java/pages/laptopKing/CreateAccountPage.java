@@ -18,14 +18,17 @@ public class CreateAccountPage {
         Common.sendKeysToElement(enterName,
                 Locators.LaptopKing.CreateAccount.inputFirstName);
     }
+
     public static void enterFullSurname(String enterSurname) {
         Common.sendKeysToElement(enterSurname,
                 Locators.LaptopKing.CreateAccount.inputLastName);
     }
+
     public static void enterFullEmail(String enterEmail) {
         Common.sendKeysToElement(enterEmail,
                 Locators.LaptopKing.CreateAccount.inputEmail);
     }
+
     public static void enterFullPassword(String enterPassword) {
         Common.sendKeysToElement(enterPassword,
                 Locators.LaptopKing.CreateAccount.inputPassword);

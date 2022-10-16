@@ -5,9 +5,10 @@ import pages.Locators;
 
 public class UsedHddSsdPage {
 
-    public static void open(String url){
+    public static void open(String url) {
         Common.openUrl(url);
     }
+
     public static void sleep(int millis) {
         Common.sleep(millis);
     }
@@ -16,7 +17,6 @@ public class UsedHddSsdPage {
         Common.clickElement(Locators.LaptopKing.AddItemsToCart.clickButtonAddItemOne);
     }
 
-
     public static void clickAddItemTwo() {
         Common.clickElement(Locators.LaptopKing.AddItemsToCart.clickButtonAddItemTwo);
     }
@@ -24,6 +24,7 @@ public class UsedHddSsdPage {
     public static void clickContinueShopping() {
         Common.clickElement(Locators.LaptopKing.AddItemsToCart.clickButtonContinueShopping);
     }
+
     public static String readCartItemValue() {
         return Common.getElementText(Locators.LaptopKing.AddItemsToCart.paragraphReadItemCartText);
     }

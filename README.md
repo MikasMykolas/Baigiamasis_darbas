@@ -24,7 +24,7 @@ Expected results: Name should be present below login icon
 
 Expected results: Should appear text that Information successfully updated and saved
 
-#### 3. TEST Try to login invalid password `Home page`
+#### 3. TEST Try to login with invalid password `Home page`
 
    * Click on Login icon *"Prisijungti"*
    * Enter valid Email in *"El.paštas"* field

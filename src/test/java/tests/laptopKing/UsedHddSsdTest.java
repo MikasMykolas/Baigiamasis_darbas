@@ -15,7 +15,6 @@ public class UsedHddSsdTest extends TestBase {
         UsedHddSsdPage.open("https://laptopking.lt/300-naudoti-hddssd");
     }
 
-
     @Test
     private void testAddItemToTheCart() {
         String expectedItemCartValue = "1";

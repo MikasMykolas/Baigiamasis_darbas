@@ -17,11 +17,11 @@ public class CreateAccountTest extends TestBase {
 
     @Test
     private void testToCreateAccount() {
-        String enterName = "Mykolas";
-        String enterSurname = "Brazauskas";
-        String enterEmail = "b.mykolas@gmail.com";
-        String enterPassword = "Testavimas";
-        String expectedTextOnLoginIcon = "Mykolas";
+        String enterName = "Vardenis";
+        String enterSurname = "Pavardenis";
+        String enterEmail = "p.vardenis@gmail.com";
+        String enterPassword = "Testavimas123";
+        String expectedTextOnLoginIcon = "Vardenis";
         String actualTextOnLoginIcon;
 
         CreateAccountPage.enterFullName(enterName);
@@ -32,14 +32,6 @@ public class CreateAccountTest extends TestBase {
         actualTextOnLoginIcon = CreateAccountPage.readLoginIconText();
 
         Assert.assertEquals(actualTextOnLoginIcon, expectedTextOnLoginIcon);
-
-
-
-        CreateAccountPage.sleep(2000);
-
-
     }
-
-
 }
 

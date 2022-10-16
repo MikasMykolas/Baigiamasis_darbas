@@ -80,7 +80,6 @@ public class HomePage {
         return Common.getElementText(Locators.LaptopKing.SearchFunctions.spanIncorrectSearchResultsText);
     }
 
-
     public static String readCorrectSearchResultsText() {
         return Common.getElementText(Locators.LaptopKing.SearchFunctions.spanCorrectSearchResultsText);
     }
