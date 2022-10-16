@@ -44,8 +44,6 @@ public class Locators {
         public static class AddItemsToCart {
             public static By clickButtonAddItemOne = By.xpath
                     ("//*[@id='js-product-list']/div/div[1]/article/div[2]/div[4]/form/div/button");
-            public static By clickButtonAddItemTwo = By.xpath
-                    ("//*[@id='js-product-list']/div/div[12]/article/div[2]/div[4]/form/div/button");
             public static By paragraphReadItemCartText = By.xpath("//p[@class='cart-products-count']");
             public static By clickButtonContinueShopping = By.xpath
                     ("//*[@id='blockcart-modal']/div/div/div[2]/div/div[2]/div/div/button");
